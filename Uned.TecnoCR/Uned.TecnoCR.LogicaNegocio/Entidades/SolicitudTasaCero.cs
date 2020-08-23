@@ -1,10 +1,11 @@
-﻿namespace Uned.TecnoCR.LogicaNegocio.Entidades
+﻿using System;
+
+namespace Uned.TecnoCR.LogicaNegocio.Entidades
 {
     public class SolicitudTasaCero
         : SolicitudDeCredito
     {
-        public SolicitudTasaCero(double elMontoSolicitadoEnColones, int elPlazoEnMeses)
-            : base(elMontoSolicitadoEnColones, elPlazoEnMeses)
+        public SolicitudTasaCero()
         {
             LaTasaDeInteres = 0;
             LaDescripcion = "Tasa 0";
