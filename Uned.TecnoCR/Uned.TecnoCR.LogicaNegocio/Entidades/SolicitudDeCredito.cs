@@ -14,15 +14,6 @@ namespace Uned.TecnoCR.LogicaNegocio.Entidades
             ElMontoSolicitadoEnColones = elMontoSolicitadoEnColones;
             ElPlazoEnMeses = elPlazoEnMeses;
         }
-        public SolicitudDeCredito(
-            double elMontoSolicitadoEnColones,
-            int elPlazoEnMeses,
-            DateTime laFechaDeSolicitud)
-        {
-            ElMontoSolicitadoEnColones = elMontoSolicitadoEnColones;
-            ElPlazoEnMeses = elPlazoEnMeses;
-            LaFechaDeSolicitud = laFechaDeSolicitud;
-        }
         public abstract double CalculeLaMensualidad();        
     }
 }
